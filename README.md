@@ -18,3 +18,5 @@ def add_salt_and_pepper_noise(image, noise_ratio=0.02):
         else:
             noisy_image[row, col] = [255, 255, 255]
     return noisy_image
+
+11
