@@ -1,7 +1,7 @@
 ### Удаление шумов и восстановление изображений с помощью методов фильтрации
 
 ## Добавление шума
-
+```Python
 def add_gaussian_noise(image, mean=0, sigma=25): 
     noise = np.random.normal(mean, sigma, image.shape).astype(np.int16)
     noisy_image = np.clip(image.astype(np.int16) + noise, 0, 255).astype(np.uint8)
@@ -18,5 +18,5 @@ def add_salt_and_pepper_noise(image, noise_ratio=0.02):
         else:
             noisy_image[row, col] = [255, 255, 255]
     return noisy_image
-
+```
 11
