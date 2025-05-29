@@ -257,7 +257,7 @@ def apply_bilateral_filter_rgb(image, kernel_size=5, sigma_spatial=10.0, sigma_r
     # Приводим обратно к uint8
     return np.clip(filtered_image, 0, 255).astype(np.uint8)
 ```
-NLM фильтр(с использованием OpenCV)
+## NLM фильтр(с использованием OpenCV)
 ```Python
 def apply_non_local_means_rgb(image, h=10, template_window_size=7, search_window_size=21):
     if image.dtype != np.uint8:
